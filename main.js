@@ -33,23 +33,30 @@ scroll(240, "#title :nth-child(3)", "animation-2", "title-animation");
 scroll(320, "#title :nth-child(4)", "btn-animation", "btn-animation2");
 
 let projectToggler = document.getElementById("proj-one");
+let projectTogglerTwo = document.getElementById("proj-two");
+
 let projOne = document.getElementById("proj-one-show");
+let projTwo = document.getElementById("proj-two-show");
+
 toggler = function () {
-  delayedGreeting();
+  delayedGreeting(projOne);
+};
+togglerTwo = function () {
+  delayedGreeting(projTwo);
 };
 projectToggler.addEventListener("click", toggler);
+projectTogglerTwo.addEventListener("click", togglerTwo);
+
 document.getElementById("proj-one-show").addEventListener("click", toggler);
-async function delayedGreeting() {
-  if (Array.from(projOne.classList).includes("proj-animation2")) {
+async function delayedGreeting(project) {
+  if (Array.from(project.classList).includes("proj-animation2")) {
     document.getElementById("container").classList.toggle("blur");
-    document.getElementById("proj-one-show").classList.toggle("d-none");
-    document.getElementById("proj-one-show").classList.toggle("proj-animation");
-    document
-      .getElementById("proj-one-show")
-      .classList.toggle("proj-animation2");
+    project.classList.toggle("d-none");
+    project.classList.toggle("proj-animation");
+    project.classList.toggle("proj-animation2");
   } else if (Array.from(projOne.classList).includes("proj-animation")) {
-    projOne.classList.toggle("proj-animation");
-    projOne.classList.toggle("proj-animation2");
+    project.classList.toggle("proj-animation");
+    project.classList.toggle("proj-animation2");
     document.getElementById("container").classList.toggle("blur");
     await sleep(2000);
 

@@ -1,8 +1,12 @@
+body {
+  overflow-x: hidden;
+}
+
 .title-animation {
   opacity: 1;
 
   animation-name: title;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -11,15 +15,45 @@
 @keyframes title {
   0% {
     color: white;
-    position: translateX(-300px);
   }
 
   50% {
     color: black;
-    transform: translateX(15px);
   }
 
   100% {
-    transform: translateX(15px);
   }
+}
+
+.animation-2 {
+  opacity: 1;
+
+  animation-name: title2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes title2 {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.project-position {
+  top: 67px;
+  right: 75px;
 }

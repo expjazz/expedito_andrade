@@ -1,9 +1,13 @@
+body {
+  overflow-x: hidden;
+}
+
 .title-animation {
   opacity: 1;
   -webkit-animation-name: title;
           animation-name: title;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -17,32 +21,72 @@
 @-webkit-keyframes title {
   0% {
     color: white;
-    position: translateX(-300px);
   }
   50% {
     color: black;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
   100% {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
 }
 
 @keyframes title {
   0% {
     color: white;
-    position: translateX(-300px);
   }
   50% {
     color: black;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
   100% {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
+}
+
+.animation-2 {
+  opacity: 1;
+  -webkit-animation-name: title2;
+          animation-name: title2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes title2 {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes title2 {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.project-position {
+  top: 67px;
+  right: 75px;
 }
 /*# sourceMappingURL=style.css.map */

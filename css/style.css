@@ -187,4 +187,14 @@ body {
 .bg-clear {
   background: white;
 }
+
+.radius {
+  border-radius: 10px;
+}
+
+.btn-animation {
+  color: white;
+  background: white;
+  border: white;
+}
 /*# sourceMappingURL=style.css.map */

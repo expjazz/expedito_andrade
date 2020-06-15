@@ -5,32 +5,32 @@ function sleep(ms) {
 delayedGreeting();
 console.log("Goodbye!");
 
-let animationControllerIn = function (element) {
-  document.querySelector(element).classList.add("animation-2");
-  document.querySelector(element).classList.remove("title-animation");
+let animationControllerIn = function (element, animation, animation2) {
+  document.querySelector(element).classList.add(animation);
+  document.querySelector(element).classList.remove(animation2);
 };
-let animationControllerOut = function (element) {
-  document.querySelector(element).classList.remove("animation-2");
-  document.querySelector(element).classList.add("title-animation");
+let animationControllerOut = function (element, animation, animation2) {
+  document.querySelector(element).classList.remove(animation);
+  document.querySelector(element).classList.add(animation2);
 };
 
-let scroll = function (num1, element) {
+let scroll = function (num1, element, animation, animation2) {
   document.addEventListener("scroll", (e) => {
     if (document.documentElement.scrollTop > num1) {
       e.stopPropagation();
 
-      animationControllerIn(element);
+      animationControllerIn(element, animation, animation2);
     } else if (document.documentElement.scrollTop < num1) {
-      animationControllerOut(element);
+      animationControllerOut(element, animation, animation2);
       e.stopPropagation();
     }
   });
 };
 
-scroll(80, "#title :nth-child(1)");
-scroll(160, "#title :nth-child(2)");
-scroll(240, "#title :nth-child(3)");
-scroll(320, "#title :nth-child(4)");
+scroll(80, "#title :nth-child(1)", "animation-2", "title-animation");
+scroll(160, "#title :nth-child(2)", "animation-2", "title-animation");
+scroll(240, "#title :nth-child(3)", "animation-2", "title-animation");
+scroll(320, "#title :nth-child(4)", "btn-animation", "btn-animation2");
 
 let projectToggler = document.getElementById("proj-one");
 let projOne = document.getElementById("proj-one-show");

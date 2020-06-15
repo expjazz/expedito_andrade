@@ -55,5 +55,53 @@ body {
 
 .project-position {
   top: 67px;
-  right: 75px;
+  left: 61%;
+  margin-left: -50%;
+  border-radius: 2%;
+}
+.proj-animation {
+  opacity: 1;
+
+  animation-name: proj;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes proj {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.proj-animation2 {
+  opacity: 1;
+
+  animation-name: proj2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes proj2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

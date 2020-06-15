@@ -30,6 +30,7 @@ let scroll = function (num1, element) {
 scroll(80, "#title :nth-child(1)");
 scroll(160, "#title :nth-child(2)");
 scroll(240, "#title :nth-child(3)");
+scroll(320, "#title :nth-child(4)");
 
 let projectToggler = document.getElementById("proj-one");
 let projOne = document.getElementById("proj-one-show");

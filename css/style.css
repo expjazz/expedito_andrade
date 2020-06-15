@@ -171,4 +171,20 @@ body {
     opacity: 0;
   }
 }
+
+.bg-img {
+  background: white;
+}
+
+.container-fluid {
+  background: white;
+}
+
+.container {
+  background: white;
+}
+
+.bg-clear {
+  background: white;
+}
 /*# sourceMappingURL=style.css.map */

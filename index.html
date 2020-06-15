@@ -15,17 +15,17 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      defer
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Expedito Andrade</title>
   </head>
   <body>
     <div class="container-fluid" id="container">
-      <div class="row">
+      <div class="row bg-sec1">
         <div class="col-5 pt-5 px-5 text-center">
           <div class="title d-flex flex-column mt-5" id="title">
             <h2 class="h2 my-2 title-animation">Expedito Andrade</h2>
@@ -34,8 +34,14 @@
               using criativity to create clean, fast and user-friendly
               applications.
             </h5>
-            <a href="#" class="btn btn-primary title-animation">
-              Check my work
+            <h4 class="h4">
+              Check my work clicking on the images on the right side
+            </h4>
+            <a
+              href="#contact-me"
+              class="btn btn-primary w-50 align-self-center"
+            >
+              Contact Me
             </a>
           </div>
         </div>
@@ -49,9 +55,9 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  class="d-block w-100"
+                  class="d-block w-100 bg-img"
                   id="proj-one"
-                  src="./images/tasks_portfolio.png"
+                  src="./images/tasks_noback.png"
                   alt="First slide"
                 />
               </div>
@@ -97,41 +103,45 @@
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="h2 mt-5 pt-5">About me</h2>
+      <div class="container" id="">
+        <div class="row bg-clear shadow-lg mt-5 py-4">
+          <div class="col-12 text-center">
+            <h2 class="h2 pt-5">About me</h2>
+          </div>
+          <div class="col-8 text-center mx-auto">
+            I'm a full stack developer & web designer fomer (professional)
+            musician with a strong passion for exploring my criativity. Having
+            spend more than 10 years dedicating to Jazz and improvisation, I
+            believe that the skills required are pretty similar in a lot of
+            ways. I love Ruby on Rails, Javascript, React, Python and Ruby with
+            focus on building with the most precision possible.
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-8 text-center mx-auto">
-          I'm a full stack developer & web designer fomer (professional)
-          musician with a strong passion for exploring my criativity. Having
-          spend more than 10 years dedicating to Jazz and improvisation, I
-          believe that the skills required are pretty similar in a lot of ways.
-          I love Ruby on Rails, Javascript, React, Python and Ruby with focus on
-          building with the most precision possible.
+        <div class="row mt-5 pt-5 mb-3 bg-clear shadow-lg">
+          <div class="col-12 text-center">
+            <h2 class="h2" id="contact-me">
+              Ready to work together and create something great?
+            </h2>
+            <p>
+              If you like my work just contact me through the social sites
+              listed below.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="row mt-5 pt-5">
-        <div class="col-12 text-center">
-          <h2 class="h2">
-            Contact me
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="body">
-            <div class="links d-flex">
-              <a href="# "><i class="fab fa-facebook-f" id="facebook"></i></a>
-              <a href="# "><i class="fab fa-twitter"></i></a>
-              <a href="# "><i class="fab fa-youtube"></i></a>
-              <a href="# "><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="button">
-              <a href="#" class="btn btn-primary"></a>
+        <div class="row bg-clear shadow-lg">
+          <div class="col-12">
+            <div class="body">
+              <div class="links d-flex justify-content-center">
+                <a href="#" class="mx-4"
+                  ><i class="fab fa-facebook-f" id="facebook"></i
+                ></a>
+                <a href="# " class="mx-4"><i class="fab fa-twitter"></i></a>
+                <a href="# " class="mx-4"><i class="fab fa-youtube"></i></a>
+                <a href="# " class="mx-4"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="button">
+                <a href="#" class="btn btn-primary"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -168,6 +178,23 @@
         allowing one class of Users (managers) to keep track and assign tasks to
         other levels (employees). It also go beyond that, allowing a direct
         communication between them with a live-chat.
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="h3">Features</h2>
+        </div>
+      </div>
+        <div class="imagecenter">
+          <img src="./images/tasks_noback.png" alt="" class="w-75" />
+        </div>
+        <div class="row">
+          <div class="col-9 mx-auto">
+        <p>
+          This app has a built-in live-chat that provides easy communication between you and your team, besides 
+          a timer to allow everyone that register the task to keep the application in the background counting the 
+          the time you need to do a task.
+        </p></div>
+      </div>
       </div>
     </div>
 

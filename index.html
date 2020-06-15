@@ -9,7 +9,16 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
@@ -39,10 +48,11 @@
             >
               Contact Me
             </a>
+            <small class="text-muted">expeditojazz@gmail.com</small>
           </div>
         </div>
 
-        <div class=" col-12 col-md-7">
+        <div class="col-12 col-md-7">
           <div
             id="carouselExampleControls"
             class="carousel slide"
@@ -57,21 +67,21 @@
                   alt="First slide"
                 />
               </div>
-               <div class="carousel-item">
-              <img
-                class="d-block w-100 bg-img"
-                id="proj-two"
-                src="./images/message-me.png"
-                alt="Second slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide"
-                alt="Third slide"
-              />
-            </div> 
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 bg-img"
+                  id="proj-two"
+                  src="./images/message-me.png"
+                  alt="Second slide"
+                />
+              </div>
+              <!-- <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide"
+                  alt="Third slide"
+                />
+              </div> -->
             </div>
             <a
               class="carousel-control-prev"
@@ -83,7 +93,7 @@
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="sr-only">Previous</span>
+              <span class="sr-only text-body">Previous</span>
             </a>
             <a
               class="carousel-control-next"
@@ -125,16 +135,28 @@
             </p>
           </div>
           <div class="col-12 pb-4">
-            <div class="body">
+            <div class="body text-center">
               <div class="links d-flex justify-content-center">
-                <a href="#" class="mx-4 text-body"
+                <a
+                  href="https://www.facebook.com/expedito.andrade"
+                  class="mx-4 text-body"
                   ><i class="fab fa-facebook-f" id="facebook"></i
                 ></a>
-                <a href="# " class="mx-4 text-body"><i class="fab fa-twitter"></i></a>
-                <a href="# " class="mx-4 text-body"><i class="fab fa-youtube"></i></a>
-                <a href="# " class="mx-4 text-body"><i class="fab fa-instagram"></i></a>
+                <a
+                  href="https://twitter.com/expeditojazz"
+                  class="mx-4 text-body"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://github.com/expjazz" class="mx-4 text-body"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/expeditoandrade/"
+                  class="mx-4 text-body"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
               </div>
-
+              <small class="text-muted">expeditojazz@gmail.com</small>
             </div>
           </div>
         </div>
@@ -177,36 +199,40 @@
           <h2 class="h3">Features</h2>
         </div>
       </div>
-        <div class="imagecenter">
-          <img src="./images/tasks_noback.png" alt="" class="w-75" />
+      <div class="imagecenter">
+        <img src="./images/tasks_noback.png" alt="" class="w-75" />
+      </div>
+      <div class="row">
+        <div class="col-9 mx-auto">
+          <p>
+            This app has a built-in live-chat that provides easy communication
+            between you and your team, besides a timer to allow everyone that
+            register the task to keep the application in the background counting
+            the the time you need to do a task.
+          </p>
         </div>
-        <div class="row">
-          <div class="col-9 mx-auto">
-        <p>
-          This app has a built-in live-chat that provides easy communication between you and your team, besides 
-          a timer to allow everyone that register the task to keep the application in the background counting the 
-          the time you need to do a task.
-        </p></div>
       </div>
-      </div>
-      <div
+      <a href="https://intense-earth-68762.herokuapp.com/"> Live demo </a>
+      <a href="https://github.com/expjazz/rails_capstone">Repository</a>
+    </div>
+    <div
       class="proj-one text-center py-5 d-none w-75 border proj-animation2 shadow-lg position-absolute project-position bg-light d-none"
       id="proj-two-show"
     >
       <div class="row">
         <div class="col-8 mx-auto">
           <h2 class="h2">
-            Group Taks
+            Message Me
           </h2>
           <h5 class="h5">
-            Manage your team productivity
+            A light-weight Webchat
           </h5>
         </div>
       </div>
       <div class="row">
         <div class="col-9 mx-auto">
           <div class="imagecenter">
-            <img src="./images/bigcell-noback.png" alt="" class="w-75" />
+            <img src="./images/message-me.png" alt="" class="w-75" />
           </div>
         </div>
       </div>
@@ -216,28 +242,10 @@
         </div>
       </div>
       <div class="row col-10 mx-auto text-center">
-        This is an app that lets you register tasks and groups in two levels,
-        allowing one class of Users (managers) to keep track and assign tasks to
-        other levels (employees). It also go beyond that, allowing a direct
-        communication between them with a live-chat.
+        This is an app that lets you talk in a private chat with your friends.
       </div>
-      <div class="row mt-md-4 mb-md-n5">
-        <div class="col-12 text-center mb-md-n5">
-          <h2 class="h3">Features</h2>
-        </div>
-      </div>
-        <div class="imagecenter">
-          <img src="./images/tasks_noback.png" alt="" class="w-75" />
-        </div>
-        <div class="row">
-          <div class="col-9 mx-auto">
-        <p>
-          This app has a built-in live-chat that provides easy communication between you and your team, besides 
-          a timer to allow everyone that register the task to keep the application in the background counting the 
-          the time you need to do a task.
-        </p></div>
-      </div>
-      </div>
+      <a href="https://pacific-mesa-24051.herokuapp.com/"> Live demo </a>
+      <a href="https://github.com/expjazz/message_me">Repository</a>
     </div>
 
     <!-- Optional JavaScript -->

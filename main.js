@@ -2,9 +2,6 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-delayedGreeting();
-console.log("Goodbye!");
-
 let animationControllerIn = function (element, animation, animation2) {
   document.querySelector(element).classList.add(animation);
   document.querySelector(element).classList.remove(animation2);
@@ -48,13 +45,14 @@ projectToggler.addEventListener("click", toggler);
 projectTogglerTwo.addEventListener("click", togglerTwo);
 
 document.getElementById("proj-one-show").addEventListener("click", toggler);
+projTwo.addEventListener("click", togglerTwo);
 async function delayedGreeting(project) {
   if (Array.from(project.classList).includes("proj-animation2")) {
     document.getElementById("container").classList.toggle("blur");
     project.classList.toggle("d-none");
     project.classList.toggle("proj-animation");
     project.classList.toggle("proj-animation2");
-  } else if (Array.from(projOne.classList).includes("proj-animation")) {
+  } else if (Array.from(project.classList).includes("proj-animation")) {
     project.classList.toggle("proj-animation");
     project.classList.toggle("proj-animation2");
     document.getElementById("container").classList.toggle("blur");
